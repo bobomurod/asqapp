@@ -16,6 +16,23 @@
             padding: 100px;
             margin-right: 10px;
         }
+
+        .mybox {
+            display: inline-block;
+            border: 2px solid #cccccc;
+            box-shadow: 2px 2px 1px #eee;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        #circle1 {
+            float: left;
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            shape-outside: circle();
+            clip-path: circle();
+            background: lightblue;
+        }
     </style>
 </head>
 <body>
@@ -36,9 +53,16 @@
 
     function Car() {
         return (
+            <div>
+
             <div className="car">
-                <h3>Ford Focus</h3>
+                <h3>Ford Fucus</h3>
                 <p>Year: <strong>2017</strong></p>
+            </div>
+            <div className="mybox">
+                <h3>dont stop</h3>
+                <div id="circle1"></div>
+            </div>
             </div>
         )
     }
